@@ -1,0 +1,3704 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      #productbox{
+     width: 100%;
+    
+     display: flex;
+  
+  }
+  #leftDiv {
+      width: 20%;
+      height: 100%;
+     
+  }
+  #rightDiv {
+      width: 100%;
+      height: 100%;
+     display: grid;
+      grid-template-columns: auto auto auto auto;
+      grid-template-rows: auto auto
+  }
+  #RightDiv{
+      width: 80%;
+      height: 100%;
+     
+  }
+  .imgClass{
+      max-width:96%;
+     
+      margin-left: 20px;
+  }
+ 
+  .p1Class{
+      font-weight: bold;
+      font-size: 20px;
+      margin-left: 20px;
+  }
+  .p2Class{
+      
+      font-size: 20px;
+      margin-left: 20px;
+  }
+  .p3Class{
+      font-weight: bold;
+      font-size: 25px;
+      margin-left: 20px;
+  }
+  .p4Class{
+      font-weight: bold;
+      font-size: 25px;
+      margin-left: 20px;
+  }
+  .p5Class{
+      font-weight: lighter;
+      font-size: 20px;
+      margin-left: 20px;
+  }
+  .head{
+    display: flex;
+    justify-content: space-between
+  }
+  *{
+            font-family: Arial,  sans-serif;
+        }
+        .footer {
+            display: flex;
+            background-color:whitesmoke;
+            margin-top:50px;
+            
+        }
+    
+        .footer-col{
+            flex-basis: 270px;
+            padding:10px;
+    
+        }
+        .heading{
+            font-size: 24px;
+            font-weight: 700;
+        }
+        .ul{
+            list-style-type: none;
+            text-align:start;
+        }
+    
+        .ul > li{
+            padding:7px;
+            font-size: 15px;
+         
+        }
+        .ul> li:hover{
+            text-decoration: underline;
+            text-decoration-color: black;
+            text-decoration-thickness: 1px;
+        }
+    
+        .footer > p{
+            flex-basis: 120px;
+            margin-left: 60px;
+            font-size: 12px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    
+        .footer > p:hover{
+            text-decoration: underline;
+            text-decoration-color: black;
+            text-decoration-thickness: 1px;
+        }
+
+
+        /* nav bar********************************style */
+        #firstbar {
+            background-color: black;
+            text-align: center;
+            color: white;
+            font-size: 18px;
+            font-weight: 400;
+            letter-spacing: 0.15px;
+        }
+
+        #firstbar a {
+            cursor: pointer;
+            color: rgb(248, 246, 246);
+        }
+
+        #firstbar p {
+            float: left;
+            margin-left: 700px;
+
+        }
+
+        #firstbar button {
+            float: right;
+            color: white;
+            background-color: black;
+            border: none;
+            cursor: pointer;
+            font-size: 13px;
+            margin-top: 10px;
+        }
+
+        #firstbar div button img {
+            height: 15px;
+            width: 15px;
+            border-radius: 50%;
+            margin-right: 5px;
+            margin-top: 5px;
+        }
+
+        #firstbar div button span {
+            /* vertical-align: top; */
+            margin-top: 15px;
+        }
+
+        .clear {
+            clear: both
+        }
+
+        #navbar {
+            margin-top: 25px;
+            padding-bottom: 13px;
+
+        }
+
+        #nav {
+            width: 96.5%;
+            margin: auto;
+        }
+
+        #inside-div {
+            display: flex;
+
+        }
+
+        #logo {
+            margin-top: 10px;
+            width: 17%;
+            font-size: 13px;
+        }
+
+        #category {
+            width: 65%;
+            margin-top: 10px;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        #category>button {
+            display: inline;
+            border: none;
+            background-color: white;
+            margin-right: 20px;
+            color: #393939;
+            font-family: Brandon Text, Arial, sans-serif;
+            font-weight: 400;
+            font-size: 18px;
+            transition-duration: 1s;
+        }
+
+        #red {
+            color: #d61f27 !important;
+        }
+
+        #search {
+            display: flex;
+            width: 20%;
+            margin-right: 0px !important;
+            margin-left: 10px;
+        }
+
+        #search>div {
+
+            margin-right: 20px;
+        }
+
+        #search>div:nth-last-child(1) {
+            margin-right: 0px;
+        }
+
+        #bag {
+            width: 15% !important;
+            height: 50px !important;
+
+
+        }
+
+        #bag img {
+            width: 100%;
+            margin-top: 3px;
+        }
+
+        #bag-image {
+            width: 100%;
+            height: 40px;
+        }
+
+        #one,
+        #two {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            font-size: 14px;
+            color: #393939;
+            font-family: Brandon Text, Arial, sans-serif;
+        }
+
+        #one img {
+            width: 100%;
+            height: 30px;
+        }
+
+        #bag>a>img {
+            width: 100%;
+            height: 25px;
+        }
+
+        #two>img {
+            width: 16px;
+            height: 16px;
+        }
+
+        .img>img {
+            width: 20px;
+            height: 20px;
+        }
+
+        #category>button:nth-last-child(1) {
+            margin-left: 17px;
+            margin-right: 0px;
+        }
+
+        #search p {
+            margin-left: 3px;
+        }
+
+        .black-content,
+        .sale-content,
+        .Women-content,
+        .Men-content,
+        .Kids-content,
+        .YoungAdult-content,
+        .Activewear-content,
+        .Home-content,
+        .Beauty-content,
+        .Designer-content {
+            display: block;
+            height: 0px;
+            width: 97%;
+            position: absolute;
+            overflow: hidden;
+            background-color: #ffffff;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            padding: 0px 25px;
+            padding-bottom: 0px;
+            z-index: 1;
+            transition: height 0.5s ease-out;
+            overflow-y: auto;
+
+        }
+
+        #inputBox {
+            display: block;
+            margin-top: 35px;
+            position: absolute;
+            top: 90px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 6;
+            border: none;
+            padding: 0px 20px;
+            width: 400px;
+            text-align: left;
+        }
+
+        #signIN {
+            display: none;
+            position: absolute;
+            top: 100px;
+            right: 20px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            border: none;
+            z-index: 7;
+            padding: 10px 10px;
+            background-color: white;
+            width: 16% !important;
+            margin-top: 20px;
+        }
+
+        #signIN li {
+            margin: 10px;
+            margin-bottom: 20px;
+            font-size: 12px;
+        }
+
+        #signIN li:nth-child(1) {
+            width: 65%;
+            background-color: black;
+            text-align: center;
+            padding: 5px 20px;
+            margin-right: 15px;
+            text-align: left;
+        }
+
+        #signIN li:nth-child(2) {
+            width: 65%;
+            border: 1px solid black;
+            text-align: center;
+            padding: 5px 20px;
+            margin-right: 15px;
+            text-align: left;
+        }
+
+        #signIN a {
+            text-decoration: none;
+            color: #393939;
+        }
+
+        #signIN li:nth-child(1)>a {
+            color: white;
+        }
+
+        .right {
+            float: right;
+        }
+
+        .mainh3 {
+            margin-top: 25px;
+            /* margin-left: 60px;
+        } */
+            font-size: 70px;
+        }
+
+        .black-content>div,
+        .sale-content>div,
+        .Women-content>div,
+        .Men-content>div,
+        .Kids-content>div,
+        .YoungAdult-content>div,
+        .Activewear-content>div,
+        .Home-content>div,
+        .Beauty-content>div,
+        .Designer-content>div {
+            display: flex;
+        }
+
+        .black-content>div>div,
+        .sale-content>div>div,
+        .Women-content>div>div,
+        .Men-content>div>div,
+        .Kids-content>div>div,
+        .YoungAdult-content>div>div,
+        .Activewear-content>div>div,
+        .Home-content>div>div,
+        .Beauty-content>div>div,
+        .Designer-content>div>div {
+            margin-right: 80px;
+        }
+
+        .black-content ul,
+        .sale-content ul,
+        .Women-content ul,
+        .Men-content ul,
+        .Kids-content ul,
+        .YoungAdult-content ul,
+        .Activewear-content ul,
+        .Home-content ul,
+        .Beauty-content ul,
+        .Designer-content ul {
+            list-style-type: none
+        }
+
+        .black-content a,
+        .sale-content a,
+        .Women-content a,
+        .Men-content a,
+        .Kids-content a,
+        .YoungAdult-content a,
+        .Activewear-content a,
+        .Home-content a,
+        .Beauty-content a,
+        .Designer-content a {
+            color: #393939;
+            font-size: 18px;
+            line-height: 1.4;
+            text-decoration: none;
+        }
+
+
+        .black-content li>a,
+        .sale-content li>a,
+        .Women-content li>a,
+        .Men-content li>a,
+        .Kids-content li>a,
+        .YoungAdult-content li>a,
+        .Activewear-content li>a,
+        .Home-content li>a,
+        .Beauty-content li>a,
+        .Designer-content li>a {
+            font-size: 18px;
+        }
+
+        .black-content li,
+        .sale-content li,
+        .Women-content li,
+        .Men-content li,
+        .Kids-content li,
+        .YoungAdult-content li,
+        .Activewear-content li,
+        .Home-content li,
+        .Beauty-content li,
+        .Designer-content li {
+            margin-bottom: 10px;
+        }
+
+        .firstDiv {
+            margin-right: 30px;
+        }
+
+        hr {
+            background-color: rgb(223, 213, 213);
+            height: 1px;
+            width: 160px;
+            margin-bottom: 10px;
+            border: none;
+        }
+
+        .topMargin {
+            margin-top: 30px;
+        }
+
+        .marginRem {
+            margin-right: 0px;
+            width: 15%;
+        }
+
+        .marginRem img {
+            width: 100%;
+            margin-top: 80px;
+            margin-bottom: 80px;
+        }
+
+        .decor {
+            font-size: 11px;
+        }
+
+        .decor+hr {
+            width: 110px;
+            background-color: black;
+        }
+
+        ul {
+            list-style-type: none
+        }
+
+
+
+
+
+
+        /* filter */
+#product-grid-filter {
+    margin-left: 10px;
+}
+#product-grid-brand, #product-grid-color, #product-grid-type {
+    width: 80%;
+    /* border: 1
+px
+ solid grey; */
+    /* padding: 5
+px
+; */
+    font-size: 12px;
+}
+.product-grid-filter-div {
+    display: grid;
+    grid-template-columns: 90% 10%;
+    padding: 2
+px
+;
+}
+.product-grid-plus-icon {
+    padding: auto;
+    text-align: right;
+    margin: auto;
+    size: 18dp;
+}
+
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -webkit-font-feature-settings: 'liga';
+    -webkit-font-smoothing: antialiased;
+}
+
+#product-grid-brand, #product-grid-color, #product-grid-type {
+    width: 80%;
+    /* border: 1
+px
+ solid grey; */
+    /* padding: 5
+px
+; */
+    font-size: 12px;
+}
+#product-grid-brand-content, #product-grid-color-content, #product-grid-type-content {
+    display: none;
+}
+#product-grid-brand, #product-grid-color, #product-grid-type {
+    width: 80%;
+    /* border: 1
+px
+ solid grey; */
+    /* padding: 5
+px
+; */
+    font-size: 12px;
+}
+
+#product-grid-brand, #product-grid-color, #product-grid-type {
+    width: 80%;
+    /* border: 1
+px
+ solid grey; */
+    /* padding: 5
+px
+; */
+    font-size: 12px;
+}
+#product-grid-brand, #product-grid-color, #product-grid-type {
+    width: 80%;
+    /* border: 1
+px
+ solid grey; */
+    /* padding: 5
+px
+; */
+    font-size: 12px;
+}
+.product-grid-checkbox-div {
+    display: grid;
+    grid-template-columns: 10% 90%;
+}
+
+#product-grid-brand, #product-grid-color, #product-grid-type {
+    width: 80%;
+    /* border: 1
+px
+ solid grey; */
+    /* padding: 5
+px
+; */
+    font-size: 12px;
+}
+.product-grid-checkmark {
+    width: 22
+px
+;
+    height: 22
+px
+;
+    border-radius: 0
+px
+;
+    border: 1
+px
+ solid rgb(189, 189, 189);
+}
+input[type="checkbox" i] {
+    background-color: initial;
+    cursor: default;
+    appearance: auto;
+    box-sizing: border-box;
+    margin: 3px 3px 3px 4px;
+    padding: initial;
+    border: initial;
+}
+/*  */
+input {
+    /* -webkit-writing-mode: horizontal-tb !important;
+    font-style: ;
+    font-variant-ligatures: ;
+    font-variant-caps: ;
+    font-variant-numeric: ;
+    font-variant-east-asian: ;
+    font-weight: ;
+    font-stretch: ;
+    font-size: ;
+    font-family: ; */
+    text-rendering: auto;
+    color: -internal-light-dark(black, white);
+    letter-spacing: normal;
+    word-spacing: normal;
+    line-height: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    appearance: auto;
+    -webkit-rtl-ordering: logical;
+    cursor: text;
+    background-color: -internal-light-dark(rgb(255, 255, 255), rgb(59, 59, 59));
+    margin: 0em;
+    padding: 1px 2px;
+    border-width: 2px;
+    border-style: inset;
+    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    border-image: initial;
+}
+#product-grid-brand, #product-grid-color, #product-grid-type {
+    width: 80%;
+    /* border: 1
+px
+ solid grey; */
+    /* padding: 5
+px
+; */
+    font-size: 12px;
+}
+body {
+    font-family: Brandon Text, Arial, sans-serif;
+    margin: 0
+px
+;
+    padding: 0
+px
+;
+}
+.product-grid-checkbox-div p {
+    font-size: 14px;
+    margin: 5
+px
+;
+    margin-left: 3
+px
+;
+    padding-bottom: 5
+px
+;
+    display: inline;
+}
+user agent stylesheet
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+#product-grid-brand, #product-grid-color, #product-grid-type {
+    width: 80%;
+    /* border: 1
+px
+ solid grey; */
+    /* padding: 5
+px
+; */
+    font-size: 12px;
+}
+
+.product-grid-checkbox-div {
+    display: grid;
+    grid-template-columns: 10% 90%;
+}
+user agent stylesheet
+div {
+    display: block;
+}
+#product-grid-brand, #product-grid-color, #product-grid-type {
+    width: 80%;
+    /* border: 1
+px
+ solid grey; */
+    /* padding: 5
+px
+; */
+    font-size: 12px;
+}
+
+.product-grid-checkmark {
+    width: 22
+px
+;
+    height: 22
+px
+;
+    border-radius: 0
+px
+;
+    border: 1
+px
+ solid rgb(189, 189, 189);
+}
+user agent stylesheet
+input[type="checkbox" i] {
+    background-color: initial;
+    cursor: default;
+    appearance: auto;
+    box-sizing: border-box;
+    margin: 3px 3px 3px 4px;
+    padding: initial;
+    border: initial;
+}
+user agent stylesheet
+input {
+    /* -webkit-writing-mode: horizontal-tb !important;
+    font-style: ;
+    font-variant-ligatures: ;
+    font-variant-caps: ;
+    font-variant-numeric: ;
+    font-variant-east-asian: ;
+    font-weight: ;
+    font-stretch: ;
+    font-size: ;
+    font-family: ; */
+    text-rendering: auto;
+    color: -internal-light-dark(black, white);
+    letter-spacing: normal;
+    word-spacing: normal;
+    line-height: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    appearance: auto;
+    -webkit-rtl-ordering: logical;
+    cursor: text;
+    background-color: -internal-light-dark(rgb(255, 255, 255), rgb(59, 59, 59));
+    margin: 0em;
+    padding: 1px 2px;
+    border-width: 2px;
+    border-style: inset;
+    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    border-image: initial;
+}
+#product-grid-brand, #product-grid-color, #product-grid-type {
+    width: 80%;
+    /* border: 1
+px
+ solid grey; */
+    /* padding: 5
+px
+; */
+    font-size: 12px;
+}
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+#product-grid-brand, #product-grid-color, #product-grid-type {
+    width: 80%;
+    /* border: 1
+px
+ solid grey; */
+    /* padding: 5
+px
+; */
+    font-size: 12px;
+}
+  
+  </style>
+</head>
+<body>
+  
+    <div onclick="removeDropdown()">
+        <div id="firstbar">
+            <div style="display: flex;">
+                <p style="margin-left: 500px;">
+                    <strong>Shipping outside of the U.S. or Canada?</strong>
+                    <a title="Learn About International Shipping" href="">Learn About International Shipping</a>
+                </p>
+                <button style="margin-left: 250px; font-size: 15px;" href=""><img src="https://n.nordstrommedia.com/alias/IN.gif"><span>India</span></button>
+            </div>
+            <div class="clear"></div>
+        </div>
+    
+    
+    
+        <div id="navbar" onmouseenter="removeBar()">
+            <d id="inside-div">
+    
+    
+                <div id="logo">
+                    <a href="home.html"><img src="https://n.nordstrommedia.com/alias/nordstrom-logo.svg"></a>
+                </div>
+    
+    
+                <div id="category">
+                    <button id="red" class="categoryType" onclick="dropDown('Blackfriday')"
+                        onmouseover="dropDown('Blackfriday')">Black Friday</button>
+                    <button class="categoryType" onclick="dropDown('Holidaygifts')"
+                        onmouseover="dropDown('Holidaygifts')">Holiday Gifts</button>
+                    <button class="categoryType" onclick="dropDown('Women')" onmouseover="dropDown('Women')">Women</button>
+                    <button class="categoryType" onclick="dropDown('Men')" onmouseover="dropDown('Men')">Men</button>
+                    <button class="categoryType" onclick="dropDown('Kids')" onmouseover="dropDown('Kids')">Kids</button>
+                    <button class="categoryType" onclick="dropDown('YoungAdult')"
+                        onmouseover="dropDown('YoungAdult')">YoungAdult</button>
+                    <button class="categoryType" onclick="dropDown('Activewear')"
+                        onmouseover="dropDown('Activewear')">Activewear</button>
+                    <button class="categoryType" onclick="dropDown('Home')" onmouseover="dropDown('Home')">Home</button>
+                    <button class="categoryType" onclick="dropDown('Beauty')"
+                        onmouseover="dropDown('Beauty')">Beauty</button>
+                    <button class="categoryType" onclick="dropDown('Designer')"
+                        onmouseover="dropDown('Designer')">Designer</button>
+                </div>
+    
+                <div id="search" onmouseleave="removeSignBar()">
+                    <div id="one" onmouseenter="searchBar()">
+                        <div class="img" onmouseenter="removeSignBar()">
+                            <img
+                                src="https://t3.ftcdn.net/jpg/03/25/73/68/240_F_325736897_lyouuiCkWI59SZAPGPLZ5OWQjw2Gw4qY.jpg"></img>
+                        </div>
+                        <input id="inputBox" maxlength="200" placeholder="What can we help you find?" type="search"
+                            value="">
+                        <div class="word">
+                            <p>Search</p>
+                        </div>
+                    </div>
+    
+                    <div id="two" onmouseenter="removeBar()">
+                        <p onmouseenter="signBar()">Hi, Malaya</p>
+                        <!-- <img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkXLgiLmUs1qs3M7byaf01fztGJV4lm0YHkw&usqp=CAU"></img> -->
+                    </div>
+    
+    
+                    <div id="signIN" onmouseleave="removeSignBar()">
+                        <ul>
+                            <!-- <li>
+                                <a href="signin.html">Sign In</a>
+                            </li>
+                            <li>
+                                <a href="signup.html">Create Account</a>
+                            </li> -->
+                            <li>
+                                <a href=""><span>Your Account</span></a>
+                            </li>
+                            <li>
+                                <a href=""><span>Purchases</span></a>
+                            </li>
+                            <li>
+                                <a href=""><span>Wish List</span></a>
+                            </li>
+                            <li>
+                                <a href=""><span>Nordy Club Rewards</span></a>
+                            </li>
+                            <li>
+                                <a href=""><span>Password & personal Info</span></a>
+                            </li>
+                            <li>
+                                <a href=""><span>Shipping Addresses</span></a>
+                            </li>
+                            <li>
+                                <a href=""><span>Payment Methods</span></a>
+                            </li>
+                        </ul>
+                    </div>
+    
+    
+                    <div id="bag">
+                        <a href="cart.html"><img id="bag-image"
+                                src="https://cdn-icons-png.flaticon.com/128/687/687259.png"></img></a>
+                    </div>
+                </div>
+        </div>
+        <div class="clear">
+        </div>
+        </div>
+    
+        <div id="main-content">
+    
+            <div class="black-content">
+                <div>
+                    <div class="firstDiv">
+                        <ul>
+                            <li id="saleIn">
+                                <h3 class="mainh3"><a href="">Black Friday: Get Inspired</a></h3>
+                            </li>
+                            <hr>
+                            <li>
+                                <h3><a href="">Bestsellers</a></h3>
+                            </li>
+                            <li>
+                                <h3>
+                                    <a href="">New Markdowns</a>
+                                </h3>
+                            </li>
+                            <li>
+                                <h3>
+                                    <a href="">Price Matched</a>
+                                </h3>
+                            </li>
+                            <li>
+                                <h3>
+                                    <a href="">Men's Designer Sale</a>
+                                </h3>
+                            </li>
+                            <li>
+                                <h3>
+                                    <a href="">Women's Designer Sale</a>
+                                </h3>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul>
+                            <li>
+                                <h3 class="mainh3">
+                                    <a href="">Women</a>
+                                </h3>
+                            </li>
+                            <li>
+                                <a href="">New Markdowns</a>
+                            </li>
+                            <li>
+                                <a href="">Clothing</a>
+                            </li>
+                            <li>
+                                <a href="">Shoes</a>
+                            </li>
+                            <li>
+                                <a href="">Handbags & Wallets</a>
+                            </li>
+                            <li>
+                                <a href="">Jewelry</a>
+                            </li>
+                            <li>
+                                <a href="">Accessories</a>
+                            </li>
+                            <li>
+                                <a href="">Beauty</a>
+                            </li>
+                            <li>
+                                <a href="">Designer</a>
+                            </li>
+                            <li class="topMargin">
+                                <a href="">Plus</a>
+                            </li>
+                            <li>
+                                <a href="">Petite</a>
+                            </li>
+                            <li>
+                                <a href="">Maternity</a>
+                            </li>
+                            <li>
+                                <a href="">Juniors</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul>
+                            <li>
+                                <h3 class="mainh3">
+                                    <a href="">Men</a>
+                                </h3>
+                            </li>
+                            <li>
+                                <a href="">New Markdowns</a>
+                            </li>
+                            <li>
+                                <a href="">Clothing</a>
+                            </li>
+                            <li>
+                                <a href="">Shoes</a>
+                            </li>
+                            <li>
+                                <a href="">Accessories</a>
+                            </li>
+                            <li>
+                                <a href="">Grooming & Cologne</a>
+                            </li>
+                            <li>
+                                <a href="">Designer</a>
+                            </li>
+                            <li>
+                                <h3 class="mainh3">
+                                    <a href="">Designer</a>
+                                </h3>
+                            </li>
+                            <li>
+                                <a href="">Women</a>
+                            </li>
+                            <li>
+                                <a href="">Men</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul>
+                            <li>
+                                <h3 class="mainh3">
+                                    <a href="">Kids</a>
+                                </h3>
+                            </li>
+                            <li>
+                                <a href="">New Markdowns</a>
+                            </li>
+                            <li>
+                                <a href="">Girls</a>
+                            </li>
+                            <li>
+                                <a href="">Boys</a>
+                            </li>
+                            <li>
+                                <a href="">Baby</a>
+                            </li>
+                            <li>
+                                <a href="">Baby Gear & Essentials</a>
+                            </li>
+                            <li>
+                                <a href="">Shoes</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul>
+                            <li>
+                                <h3 class="mainh3">
+                                    <a href="">Home</a>
+                                </h3>
+                            </li>
+                            <li>
+                                <a href="">New Markdowns</a>
+                            </li>
+                            <li>
+                                <a href="">Bedding & Bath</a>
+                            </li>
+                            <li>
+                                <a href="">Home Decor</a>
+                            </li>
+                            <li>
+                                <a href="">Electronics & Tech Accessories</a>
+                            </li>
+                            <li>
+                                <a href="">Luggage & Travel</a>
+                            </li>
+                            <li>
+                                <a href="">Tabletop & Kitchen</a>
+                            </li>
+                            <li>
+                                <h3 class="mainh3"><a href="">Beauty</a></h3>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="marginRem">
+                        <div>
+                            <div>
+                                <a href="">
+                                    <div>
+                                        <img src="https://n.nordstrommedia.com/id/f3cd68c6-bb58-48f3-acd2-d12b309d3f24.png">
+                                    </div>
+                                </a>
+                            </div>
+                            <div>
+                                <a class="decor" href="">New Markdowns</a>
+                                <hr>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+    
+            <div class="sale-content">
+                <div>
+                    <div class="firstDiv">
+                        <ul>
+                            <li id="saleIn">
+                                <h3 class="mainh3"><a href="">Holiday Gifts: Get Inspired</a></h3>
+                            </li>
+                            <hr>
+                            <li>
+                                <h3><a href="">Gift Cards</a></h3>
+                            </li>
+                            <li>
+                                <h3>
+                                    <a href="">Festive Experiences</a>
+                                </h3>
+                            </li>
+                            <li>
+                                <h3>
+                                    <a href="">Services</a>
+                                </h3>
+                            </li>
+    
+                        </ul>
+                    </div>
+                    <div>
+                        <ul>
+                            <li>
+                                <h3 class="mainh3">
+                                    <a href="">Women</a>
+                                </h3>
+                            </li>
+                            <li>
+                                <a href="">New Markdowns</a>
+                            </li>
+                            <li>
+                                <a href="">Clothing</a>
+                            </li>
+                            <li>
+                                <a href="">Shoes</a>
+                            </li>
+                            <li>
+                                <a href="">Handbags & Wallets</a>
+                            </li>
+                            <li>
+                                <a href="">Jewelry</a>
+                            </li>
+                            <li>
+                                <a href="">Accessories</a>
+                            </li>
+                            <li>
+                                <a href="">Beauty</a>
+                            </li>
+                            <li>
+                                <a href="">Designer</a>
+                            </li>
+                            <li class="topMargin">
+                                <a href="">Plus</a>
+                            </li>
+                            <li>
+                                <a href="">Petite</a>
+                            </li>
+                            <li>
+                                <a href="">Maternity</a>
+                            </li>
+                            <li>
+                                <a href="">Juniors</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul>
+                            <li>
+                                <h3 class="mainh3">
+                                    <a href="">Men</a>
+                                </h3>
+                            </li>
+                            <li>
+                                <a href="">New Markdowns</a>
+                            </li>
+                            <li>
+                                <a href="">Clothing</a>
+                            </li>
+                            <li>
+                                <a href="">Shoes</a>
+                            </li>
+                            <li>
+                                <a href="">Accessories</a>
+                            </li>
+                            <li>
+                                <a href="">Grooming & Cologne</a>
+                            </li>
+                            <li>
+                                <a href="">Designer</a>
+                            </li>
+                            <li>
+                                <h3 class="mainh3">
+                                    <a href="">Designer</a>
+                                </h3>
+                            </li>
+                            <li>
+                                <a href="">Women</a>
+                            </li>
+                            <li>
+                                <a href="">Men</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul>
+                            <li>
+                                <h3 class="mainh3">
+                                    <a href="">Kids</a>
+                                </h3>
+                            </li>
+                            <li>
+                                <a href="">New Markdowns</a>
+                            </li>
+                            <li>
+                                <a href="">Girls</a>
+                            </li>
+                            <li>
+                                <a href="">Boys</a>
+                            </li>
+                            <li>
+                                <a href="">Baby</a>
+                            </li>
+                            <li>
+                                <a href="">Baby Gear & Essentials</a>
+                            </li>
+                            <li>
+                                <a href="">Shoes</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul>
+                            <li>
+                                <h3 class="mainh3">
+                                    <a href="">Home</a>
+                                </h3>
+                            </li>
+                            <li>
+                                <a href="">New Markdowns</a>
+                            </li>
+                            <li>
+                                <a href="">Bedding & Bath</a>
+                            </li>
+                            <li>
+                                <a href="">Home Decor</a>
+                            </li>
+                            <li>
+                                <a href="">Electronics & Tech Accessories</a>
+                            </li>
+                            <li>
+                                <a href="">Luggage & Travel</a>
+                            </li>
+                            <li>
+                                <a href="">Tabletop & Kitchen</a>
+                            </li>
+                            <li>
+                                <h3 class="mainh3"><a href="">Beauty</a></h3>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="marginRem">
+                        <div>
+                            <div>
+                                <a href="">
+                                    <div>
+                                        <img src="https://n.nordstrommedia.com/id/faae0c02-a9a9-427d-b69e-ce5fbd38e500.png">
+                                    </div>
+                                </a>
+                            </div>
+                            <div>
+                                <a class="decor" href="">New Markdowns</a>
+                                <hr>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+    
+            <div class="Women-content">
+                <div>
+                    <div class="firstDiv">
+                        <ul>
+                            <li id="saleIn">
+                                <h3 class="mainh3"><a href="">Women: Get Inspired</a></h3>
+                            </li>
+                            <hr>
+                            <li>
+                                <h3><a href="">New Arrivals</a></h3>
+                            </li>
+                            <li>
+                                <h3>
+                                    <a href="">Coming Soon: ASOS</a>
+                                </h3>
+                            </li>
+                            <li>
+                                <h3>
+                                    <a href="">Black-Owned & Founded Brands</a>
+                                </h3>
+                            </li>
+                            <li>
+                                <h3>
+                                    <a href="">Contemporary</a>
+                                </h3>
+                            </li>
+                            <li>
+                                <h3>
+                                    <a href="">Cozy Shop</a>
+                                </h3>
+                            </li>
+                            <li>
+                                <h3>
+                                    <a href="">Nodestrom Made</a>
+                                </h3>
+                            </li>
+                            <li>
+                                <h3>
+                                    <a href="">Make it Pop-In @ Nodestrom</a>
+                                </h3>
+                            </li>
+                            <li>
+                                <h3>
+                                    <a href="Sustainable Style">Sustainable Style</a>
+                                </h3>
+                            </li>
+                            <li>
+                                <h3>
+                                    <a href="Wedding shop">Wedding shop</a>
+                                </h3>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul>
+                            <li>
+                                <h3 class="mainh3">
+                                    <a href="">Clothing</a>
+                                </h3>
+                            </li>
+                            <li>
+                                <a href="activewear.html">Activewear</a>
+                            </li>
+                            <li>
+                                <a href="">Blazers</a>
+                            </li>
+                            <li>
+                                <a href="">Coats & jackets</a>
+                            </li>
+                            <li>
+                                <a href="">Dresses</a>
+                            </li>
+                            <li>
+                                <a href="">Jeans & Denim</a>
+                            </li>
+                            <li>
+                                <a href="">Lingerie, Hosiery & Shapewere</a>
+                            </li>
+                            <li>
+                                <a href="">Loungewear</a>
+                            </li>
+                            <li>
+                                <a href="">Pants & leggings</a>
+                            </li>
+                            <li>
+                                <a href="">Shorts</a>
+                            </li>
+                            <li>
+                                <a href="">Skirts</a>
+                            </li>
+                            <li>
+                                <a href="">Sleepwear & Robes</a>
+                            </li>
+                            <li>
+                                <a href="">Sweaters</a>
+                            </li>
+                            <li>
+                                <a href="">Sweatshirts & Hoodies</a>
+                            </li>
+                            <li>
+                                <a href="">Swimsuits & Cover-Ups</a>
+                            </li>
+                            <li>
+                                <a href="">Tops</a>
+                            </li>
+                            <li class="topMargin">
+                                <a href="">Plus-size clothing</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul>
+                            <li>
+                                <h3 class="mainh3">
+                                    <a href="">Shoes</a>
+                                </h3>
+                            </li>
+                            <li>
+                                <a href="">Booties</a>
+                            </li>
+                            <li>
+                                <a href="">Boots</a>
+                            </li>
+                            <li>
+                                <a href="">Comfort</a>
+                            </li>
+                            <li>
+                                <a href="">Flats</a>
+                            </li>
+                            <li>
+                                <a href="">Heels</a>
+                            </li>
+                            <li>
+                                <a href="">Mules & Slides</a>
+                            </li>
+                            <li>
+                                <a href="">Oxfords & Loafers</a>
+                            </li>
+                            <li>
+                                <a href="">Running Shoes</a>
+                            </li>
+                            <li>
+                                <a href="">Sandals</a>
+                            </li>
+                            <li>
+                                <a href="">Shoe Care & Accessories</a>
+                            </li>
+                            <li>
+                                <a href="">Slippers</a>
+                            </li>
+                            <li>
+                                <a href="">Sneakers & Athlitic</a>
+                            </li>
+                            <li>
+                                <a href="">Snow & Winter</a>
+                            </li>
+                            <li>
+                                <h3 class="mainh3">
+                                    <a href="">Snakers Release Calender</a>
+                                </h3>
+                            </li>
+    
+                        </ul>
+                    </div>
+                    <div>
+                        <ul>
+                            <li>
+                                <h3 class="mainh3">
+                                    <a href="">Handbags</a>
+                                </h3>
+                            </li>
+                            <li>
+                                <a href="">Backpages</a>
+                            </li>
+                            <li>
+                                <a href="">Belt Bags</a>
+                            </li>
+                            <li>
+                                <a href="">Camera Bags</a>
+                            </li>
+                            <li>
+                                <a href="">Bucket Bags</a>
+                            </li>
+                            <li>
+                                <a href="">Clutches & Pouches</a>
+                            </li>
+                            <li>
+                                <a href="">Crossbody Bags</a>
+                            </li>
+                            <li>
+                                <a href="">Designer Bags</a>
+                            </li>
+                            <li>
+                                <a href="">Hobo Bags</a>
+                            </li>
+                            <li>
+                                <a href="">satchesls</a>
+                            </li>
+                            <li>
+                                <a href="">Tote Bags</a>
+                            </li>
+                            <li>
+                                <a href="">Wallets & Card Cases</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul>
+                            <li>
+                                <h3 class="mainh3">
+                                    <a href="">Jewelry</a>
+                                </h3>
+                            </li>
+                            <li>
+                                <a href="">Bracelets</a>
+                            </li>
+                            <li>
+                                <a href="">Earrings</a>
+                            </li>
+                            <li>
+                                <a href="">Necklaces</a>
+                            </li>
+                            <li>
+                                <a href="">Rings</a>
+                            </li>
+                            <li>
+                                <a href="">Watches</a>
+                            </li>
+                            <li>
+                                <h3 class="mainh3">
+                                    <a href="">Fine Jewelry</a>
+                                </h3>
+                            <li>
+                                <a href="">Experience Fine Jewelry</a>
+                            </li>
+                            </li>
+                            <li>
+                                <h3 class="mainh3"><a href="">Accessories</a></h3>
+                            </li>
+                            <li>
+                                <a href="">Belts</a>
+                            </li>
+                            <li>
+                                <a href="">Face Masks</a>
+                            </li>
+                            <li>
+                                <a href="">Gloves & Mittens</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="marginRem">
+                        <div>
+                            <div>
+                                <a href="">
+                                    <div>
+                                        <img src="https://n.nordstrommedia.com/id/6e9bba32-1568-47b3-8dcc-cdb0e42ab8c3.png">
+                                    </div>
+                                </a>
+                            </div>
+                            <div>
+                                <a class="decor" href="">Gifts for Her</a>
+                                <hr>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="Men-content">
+                <div>
+                    <div class="firstDiv">
+                        <ul>
+                            <li id="saleIn">
+                                <h3 class="mainh3"><a href="">Men: Get Inspired</a></h3>
+                            </li>
+                            <hr>
+                            <li>
+                                <h3><a href="">New Arrivals</a></h3>
+                            </li>
+                            <li>
+                                <h3>
+                                    <a href="">Coming Soon: ASOS</a>
+                                </h3>
+                            </li>
+                            <li>
+                                <h3>
+                                    <a href="">Black-Owned & Founded Brands</a>
+                                </h3>
+                            </li>
+                            <li>
+                                <h3>
+                                    <a href="">Bestsellers</a>
+                                </h3>
+                            </li>
+                            <li>
+                                <h3>
+                                    <a href="">Graphic Tees</a>
+                                </h3>
+                            </li>
+                            <li>
+                                <h3>
+                                    <a href="">Make it pop-it @ Nordstrom</a>
+                                </h3>
+                            </li>
+                            <li>
+                                <h3>
+                                    <a href="">Men's Looks</a>
+                                </h3>
+                            </li>
+                            <li>
+                                <h3>
+                                    <a href="">Men's Wedding Guest Attire</a>
+                                </h3>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul>
+                            <li>
+                                <h3 class="mainh3">
+                                    <a href="">Clothing</a>
+                                </h3>
+                            </li>
+                            <li>
+                                <a href="mens.html">Activewear</a>
+                            </li>
+                            <li>
+                                <a href="">Blazers & Sport Coats</a>
+                            </li>
+                            <li>
+                                <a href="">Coats & Jackets</a>
+                            </li>
+                            <li>
+                                <a href="">Dress Shirts</a>
+                            </li>
+                            <li>
+                                <a href="">Jeans</a>
+                            </li>
+                            <li>
+                                <a href="">Joggers & Sweatpants</a>
+                            </li>
+                            <li>
+                                <a href="">Lounge, Pajamas & Robes</a>
+                            </li>
+                            <li>
+                                <a href="">Pants</a>
+                            </li>
+                            <li>
+                                <a href="">Polo Shirts</a>
+                            </li>
+                            <li>
+                                <a href="">Shirts</a>
+                            </li>
+                            <li>
+                                <a href="">Shorts</a>
+                            </li>
+                            <li>
+                                <a href="">Socks</a>
+                            </li>
+                            <li>
+                                <a href="">Suits & Separates</a>
+                            </li>
+                            <li>
+                                <a href="">Sweaters</a>
+                            </li>
+                            <li>
+                                <a href="">Sweatshirts & Hoodies</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul>
+                            <li>
+                                <h3 class="mainh3">
+                                    <a href="">Shoes</a>
+                                </h3>
+                            </li>
+                            <li>
+                                <a href="boot.html">Boots</a>
+                            </li>
+                            <li>
+                                <a href="">Comfort</a>
+                            </li>
+                            <li>
+                                <a href="">Dress Shirts</a>
+                            </li>
+                            <li>
+                                <a href="">Loafers & Slip-One</a>
+                            </li>
+                            <li>
+                                <a href="">Oxfords & Derbys</a>
+                            </li>
+                            <li>
+                                <a href="">Running Shoes</a>
+                            </li>
+                            <li>
+                                <a href="">Sandals & Flip-Flops</a>
+                            </li>
+                            <li>
+                                <a href="">Shoe Care & Accessories</a>
+                            </li>
+                            <li>
+                                <a href="">Slippers</a>
+                            </li>
+                            <li>
+                                <a href="">Sneakers & Athlitic</a>
+                            </li>
+                        </ul>
+                    </div>
+    
+    
+                    <div>
+                        <ul>
+                            <li>
+                                <h3 class="mainh3">
+                                    <a href="">Accessories</a>
+                                </h3>
+                            </li>
+                            <li>
+                                <a href="">Bags & Backpages</a>
+                            </li>
+                            <li>
+                                <a href="">Belts</a>
+                            </li>
+                            <li>
+                                <a href="">Face Masks</a>
+                            </li>
+                            <li>
+                                <a href="">Gloves</a>
+                            </li>
+                            <li>
+                                <a href="">Hats</a>
+                            </li>
+                            <li>
+                                <a href="">Shoes</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul>
+                            <li>
+                                <h3 class="mainh3">
+                                    <a href="">Designer</a>
+                                </h3>
+                            </li>
+                            <li>
+                                <a href="mens.html">Designer Clothing</a>
+                            </li>
+                            <li>
+                                <a href="boot.html">Designer Shose</a>
+                            </li>
+                            <li>
+                                <a href="">Designer Accessories</a>
+                            </li>
+                            <li>
+                                <h3 class="mainh3">
+                                    <a href="">Big & Tall</a>
+                                </h3>
+                            </li>
+                            <li>
+                                <a href="">Clothing</a>
+                            </li>
+                            <li>
+                                <a href="">Jeans</a>
+                            </li>
+                            <li>
+                                <a href="">Pants</a>
+                            </li>
+                            <li>
+                                <a href="">shirts</a>
+                            </li>
+                            <li>
+                                <h3 class="mainh3">
+                                    <a href="">Grooming & Cologne</a>
+                                </h3>
+                            </li>
+                            <li>
+                                <a href="">Body Care & Deodrant</a>
+                            </li>
+                            <li>
+                                <a href="">Cologne</a>
+                            </li>
+                            <li>
+                                <a href="">Dopp Kits & Toiletry Bags</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="marginRem">
+                        <div>
+                            <div>
+                                <a href="">
+                                    <div>
+                                        <img src="https://n.nordstrommedia.com/id/8908a408-3917-465e-b077-729b84d78ff5.png">
+                                    </div>
+                                </a>
+                            </div>
+                            <div>
+                                <a class="decor" href="">Gifts for Him</a>
+                                <hr>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="Kids-content">
+                <div>
+                    <div class="firstDiv">
+                        <ul>
+                            <li id="saleIn">
+                                <h3 class="mainh3"><a href="">Kids: Get Inspired</a></h3>
+                            </li>
+                            <hr>
+                            <li>
+                                <h3><a href="">New Arrivals</a></h3>
+                            </li>
+                            <li>
+                                <h3>
+                                    <a href="">Black-Owned & Founded Brands</a>
+                                </h3>
+                            </li>
+                            <li>
+                                <h3>
+                                    <a href="">Designer</a>
+                                </h3>
+                            </li>
+                            <li>
+                                <h3>
+                                    <a href="">Everyday Basics</a>
+                                </h3>
+                            </li>
+                            <li>
+                                <h3>
+                                    <a href="">Kids' Looks</a>
+                                </h3>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul>
+                            <li>
+                                <h3 class="mainh3">
+                                    <a href="">All Girls</a>
+                                </h3>
+                            </li>
+                            <li>
+                                <a href="">Girls Clothing(Sizes 2T-6X)</a>
+                            </li>
+                            <li>
+                                <a href="">Girls Clothing(Sizes7-16)</a>
+                            </li>
+                            <li>
+                                <a href="">Tween Girls</a>
+                            </li>
+                            <li>
+                                <a href="">Accessories</a>
+                            </li>
+                            <li>
+                                <a href="">Activewear</a>
+                            </li>
+                            <li>
+                                <a href="">Coats & jackets</a>
+                            </li>
+                            <li>
+                                <a href="">Dresses & Rompers</a>
+                            </li>
+                            <li>
+                                <a href="">Face Masks</a>
+                            </li>
+                            <li>
+                                <a href="">Jeans</a>
+                            </li>
+                            <li>
+                                <a href="">Leggings & Pants</a>
+                            </li>
+                            <li>
+                                <a href="">Pajamas & Robes</a>
+                            </li>
+                            <li>
+                                <a href="">Juniors</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul>
+                            <li>
+                                <h3 class="mainh3">
+                                    <a href="">All Boys</a>
+                                </h3>
+                            </li>
+                            <li>
+                                <a href="">Boys Clothing(Sizes 2T-7)</a>
+                            </li>
+                            <li>
+                                <a href="">Boys Clothing(Sizes 8-20)</a>
+                            </li>
+                            <li>
+                                <a href="">Tween Boys</a>
+                            </li>
+                            <li>
+                                <a href="">Accessories</a>
+                            </li>
+                            <li>
+                                <a href="">Activewear</a>
+                            </li>
+                            <li>
+                                <a href="">Coats & jackets</a>
+                            </li>
+                            <li>
+                                <h3>
+                                    <a href="">Face Masks</a>
+                                </h3>
+                            </li>
+                            <li>
+                                <a href="">Jeans</a>
+                            </li>
+                            <li>
+                                <a href="">Pajamas & Robes</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul>
+                            <li>
+                                <h3 class="mainh3">
+                                    <a href="">Kids' Shoes</a>
+                                </h3>
+                            </li>
+                            <li>
+                                <a href="">Toddler(Sizes 7.5-12)</a>
+                            </li>
+                            <li>
+                                <a href="">Little Kid(Sizes 12.5-3)</a>
+                            </li>
+                            <li>
+                                <a href="">Big Kid(Sizes 3.5-7)</a>
+                            </li>
+                            <li>
+                                <h3>
+                                    <a href="">Girls' Shoes</a>
+                                </h3>
+                            </li>
+                            <li>
+                                <a href="">Toddler(Sizes 7.5-12)</a>
+                            </li>
+                            <li>
+                                <a href="">Little Kid(Sizes 12.5-3)</a>
+                            </li>
+                            <li>
+                                <a href="">Big Kid(Sizes 3.5-7)</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul>
+                            <li>
+                                <h3 class="mainh3">
+                                    <a href="">Baby Clothing</a>
+                                </h3>
+                            </li>
+                            <li>
+                                <a href="">Accessories</a>
+                            </li>
+                            <li>
+                                <a href="">Baby Girl Clothing</a>
+                            </li>
+                            <li>
+                                <a href="">Gender Neutral Baby Clothing</a>
+                            </li>
+                            <li>
+                                <a href="">Electronics & Tech Accessories</a>
+                            </li>
+                            <li>
+                                <a href="">Baby Shower Gifts</a>
+                            </li>
+                            <li>
+                                <h3>
+                                    <a href=""> Baby Gear & Essentials</a>
+                            </li>
+                            <li>
+                                <a href="">Baby Carriers</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="marginRem">
+                        <div>
+                            <div>
+                                <a href="">
+                                    <div>
+                                        <img src="https://n.nordstrommedia.com/id/fd8dc984-98ae-436a-848a-389ed2df5467.png">
+                                    </div>
+                                </a>
+                            </div>
+                            <div>
+                                <a class="decor" href="">New Markdowns</a>
+                                <hr>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+    
+    
+            <div class="YoungAdult-content">
+                <div>
+                    <div class="firstDiv">
+                        <ul>
+                            <li id="saleIn">
+                                <h3 class="mainh3"><a href="">Sale: Get Inspired</a></h3>
+                            </li>
+                            <hr>
+                            <li>
+                                <h3><a href="">Bestsellers</a></h3>
+                            </li>
+                            <li>
+                                <h3>
+                                    <a href="">New Markdowns</a>
+                                </h3>
+                            </li>
+                            <li>
+                                <h3>
+                                    <a href="">Price Matched</a>
+                                </h3>
+                            </li>
+                            <li>
+                                <h3>
+                                    <a href="">Men's Designer Sale</a>
+                                </h3>
+                            </li>
+                            <li>
+                                <h3>
+                                    <a href="">Women's Designer Sale</a>
+                                </h3>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul>
+                            <li>
+                                <h3 class="mainh3">
+                                    <a href="">Women</a>
+                                </h3>
+                            </li>
+                            <li>
+                                <a href="">New Markdowns</a>
+                            </li>
+                            <li>
+                                <a href="">Clothing</a>
+                            </li>
+                            <li>
+                                <a href="">Shoes</a>
+                            </li>
+                            <li>
+                                <a href="">Handbags & Wallets</a>
+                            </li>
+                            <li>
+                                <a href="">Jewelry</a>
+                            </li>
+                            <li>
+                                <a href="">Accessories</a>
+                            </li>
+                            <li>
+                                <a href="">Beauty</a>
+                            </li>
+                            <li>
+                                <a href="">Designer</a>
+                            </li>
+                            <li class="topMargin">
+                                <a href="">Plus</a>
+                            </li>
+                            <li>
+                                <a href="">Petite</a>
+                            </li>
+                            <li>
+                                <a href="">Maternity</a>
+                            </li>
+                            <li>
+                                <a href="">Juniors</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul>
+                            <li>
+                                <h3 class="mainh3">
+                                    <a href="">Men</a>
+                                </h3>
+                            </li>
+                            <li>
+                                <a href="">New Markdowns</a>
+                            </li>
+                            <li>
+                                <a href="">Clothing</a>
+                            </li>
+                            <li>
+                                <a href="">Shoes</a>
+                            </li>
+                            <li>
+                                <a href="">Accessories</a>
+                            </li>
+                            <li>
+                                <a href="">Grooming & Cologne</a>
+                            </li>
+                            <li>
+                                <a href="">Designer</a>
+                            </li>
+                            <li>
+                                <h3 class="mainh3">
+                                    <a href="">Designer</a>
+                                </h3>
+                            </li>
+                            <li>
+                                <a href="">Women</a>
+                            </li>
+                            <li>
+                                <a href="">Men</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul>
+                            <li>
+                                <h3 class="mainh3">
+                                    <a href="">Kids</a>
+                                </h3>
+                            </li>
+                            <li>
+                                <a href="">New Markdowns</a>
+                            </li>
+                            <li>
+                                <a href="">Girls</a>
+                            </li>
+                            <li>
+                                <a href="">Boys</a>
+                            </li>
+                            <li>
+                                <a href="">Baby</a>
+                            </li>
+                            <li>
+                                <a href="">Baby Gear & Essentials</a>
+                            </li>
+                            <li>
+                                <a href="">Shoes</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul>
+                            <li>
+                                <h3 class="mainh3">
+                                    <a href="">Home</a>
+                                </h3>
+                            </li>
+                            <li>
+                                <a href="">New Markdowns</a>
+                            </li>
+                            <li>
+                                <a href="">Bedding & Bath</a>
+                            </li>
+                            <li>
+                                <a href="">Home Decor</a>
+                            </li>
+                            <li>
+                                <a href="">Electronics & Tech Accessories</a>
+                            </li>
+                            <li>
+                                <a href="">Luggage & Travel</a>
+                            </li>
+                            <li>
+                                <a href="">Tabletop & Kitchen</a>
+                            </li>
+                            <li>
+                                <h3 class="mainh3"><a href="">Beauty</a></h3>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="marginRem">
+                        <div>
+                            <div>
+                                <a href="">
+                                    <div>
+                                        <img src="https://n.nordstrommedia.com/id/faae0c02-a9a9-427d-b69e-ce5fbd38e500.png">
+                                    </div>
+                                </a>
+                            </div>
+                            <div>
+                                <a class="decor" href="">New Markdowns</a>
+                                <hr>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+    
+            <div class="Activewear-content">
+                <div>
+                    <div class="firstDiv">
+                        <ul>
+                            <li id="saleIn">
+                                <h3 class="mainh3"><a href="">Sale: Get Inspired</a></h3>
+                            </li>
+                            <hr>
+                            <li>
+                                <h3><a href="">Bestsellers</a></h3>
+                            </li>
+                            <li>
+                                <h3>
+                                    <a href="">New Markdowns</a>
+                                </h3>
+                            </li>
+                            <li>
+                                <h3>
+                                    <a href="">Price Matched</a>
+                                </h3>
+                            </li>
+                            <li>
+                                <h3>
+                                    <a href="">Men's Designer Sale</a>
+                                </h3>
+                            </li>
+                            <li>
+                                <h3>
+                                    <a href="">Women's Designer Sale</a>
+                                </h3>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul>
+                            <li>
+                                <h3 class="mainh3">
+                                    <a href="">Women</a>
+                                </h3>
+                            </li>
+                            <li>
+                                <a href="">New Markdowns</a>
+                            </li>
+                            <li>
+                                <a href="">Clothing</a>
+                            </li>
+                            <li>
+                                <a href="">Shoes</a>
+                            </li>
+                            <li>
+                                <a href="">Handbags & Wallets</a>
+                            </li>
+                            <li>
+                                <a href="">Jewelry</a>
+                            </li>
+                            <li>
+                                <a href="">Accessories</a>
+                            </li>
+                            <li>
+                                <a href="">Beauty</a>
+                            </li>
+                            <li>
+                                <a href="">Designer</a>
+                            </li>
+                            <li class="topMargin">
+                                <a href="">Plus</a>
+                            </li>
+                            <li>
+                                <a href="">Petite</a>
+                            </li>
+                            <li>
+                                <a href="">Maternity</a>
+                            </li>
+                            <li>
+                                <a href="">Juniors</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul>
+                            <li>
+                                <h3 class="mainh3">
+                                    <a href="">Men</a>
+                                </h3>
+                            </li>
+                            <li>
+                                <a href="">New Markdowns</a>
+                            </li>
+                            <li>
+                                <a href="">Clothing</a>
+                            </li>
+                            <li>
+                                <a href="">Shoes</a>
+                            </li>
+                            <li>
+                                <a href="">Accessories</a>
+                            </li>
+                            <li>
+                                <a href="">Grooming & Cologne</a>
+                            </li>
+                            <li>
+                                <a href="">Designer</a>
+                            </li>
+                            <li>
+                                <h3 class="mainh3">
+                                    <a href="">Designer</a>
+                                </h3>
+                            </li>
+                            <li>
+                                <a href="">Women</a>
+                            </li>
+                            <li>
+                                <a href="">Men</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul>
+                            <li>
+                                <h3 class="mainh3">
+                                    <a href="">Kids</a>
+                                </h3>
+                            </li>
+                            <li>
+                                <a href="">New Markdowns</a>
+                            </li>
+                            <li>
+                                <a href="">Girls</a>
+                            </li>
+                            <li>
+                                <a href="">Boys</a>
+                            </li>
+                            <li>
+                                <a href="">Baby</a>
+                            </li>
+                            <li>
+                                <a href="">Baby Gear & Essentials</a>
+                            </li>
+                            <li>
+                                <a href="">Shoes</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul>
+                            <li>
+                                <h3 class="mainh3">
+                                    <a href="">Home</a>
+                                </h3>
+                            </li>
+                            <li>
+                                <a href="">New Markdowns</a>
+                            </li>
+                            <li>
+                                <a href="">Bedding & Bath</a>
+                            </li>
+                            <li>
+                                <a href="">Home Decor</a>
+                            </li>
+                            <li>
+                                <a href="">Electronics & Tech Accessories</a>
+                            </li>
+                            <li>
+                                <a href="">Luggage & Travel</a>
+                            </li>
+                            <li>
+                                <a href="">Tabletop & Kitchen</a>
+                            </li>
+                            <li>
+                                <h3 class="mainh3"><a href="">Beauty</a></h3>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="marginRem">
+                        <div>
+                            <div>
+                                <a href="">
+                                    <div>
+                                        <img src="https://n.nordstrommedia.com/id/faae0c02-a9a9-427d-b69e-ce5fbd38e500.png">
+                                    </div>
+                                </a>
+                            </div>
+                            <div>
+                                <a class="decor" href="">New Markdowns</a>
+                                <hr>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+    
+            <div class="Home-content">
+                <div>
+                    <div class="firstDiv">
+                        <ul>
+                            <li>
+                                <h3 class="mainh3">
+                                    <a href="">Home: Get Inspired</a>
+                                </h3>
+                            </li>
+                            <hr>
+                            <li>
+                                <h3>
+                                    <a href="">New Arrivals</a>
+                                </h3>
+                            </li>
+                            <li>
+                                <h3>
+                                    <a href="">
+                                        Black-Owned & Founded Brands
+                                    </a>
+                                </h3>
+                            </li>
+                            <li>
+                                <h3>
+                                    <a href="">Dorm Room Essentials</a>
+                                </h3>
+                            </li>
+                            <li>
+                                <h3>
+                                    <a href="">Gift Cards</a>
+                                </h3>
+                            </li>
+                            <li>
+                                <h3>
+                                    <a href="">GOODEE</a>
+                                </h3>
+                            </li>
+                            <li>
+                                <h3>
+                                    <a href="">Home Looks</a>
+                                </h3>
+                            </li>
+                            <li>
+                                <h3>
+                                    <a href="">Nordstrom Made</a>
+                                </h3>
+                            </li>
+                            <li>
+                                <h3>
+                                    <a href="">Personalized Shop</a>
+                                </h3>
+                            </li>
+                            <li>
+                                <h3>
+                                    <a href="">Pop-In: Disney Mickey & Friends</a>
+                                </h3>
+                            </li>
+                            <li>
+                                <h3>
+                                    <a href="">Sustainable Style</a>
+                                </h3>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul>
+                            <li>
+                                <h3 class="mainh3">
+                                    <a href="">Bath</a>
+                                </h3>
+                            </li>
+                            <li>
+                                <a href="">Bath Accessories</a>
+                            </li>
+                            <li>
+                                <a href="">Towels</a>
+                            </li>
+                            <li>
+                                <h3 class="mainh3">
+                                    <a href="">Bedding</a>
+                                </h3>
+                            </li>
+                            <li>
+                                <a href="">Bedding Basics</a>
+                            </li>
+                            <li>
+                                <a href="">Bedding Sets</a>
+                            </li>
+                            <li>
+                                <a href="">Blankets & Throws</a>
+                            </li>
+                            <li>
+                                <a href="">Comforters & Quilts</a>
+                            </li>
+                            <li>
+                                <a href="">Duvet Covers & Shams</a>
+                            </li>
+                            <li>
+                                <a href="">Sheets & Bed Skirts</a>
+                            </li>
+                            <li>
+                                <h3 class="mainh3">
+                                    <a href="">Electronics & Music</a>
+                                </h3>
+                            </li>
+                            <li>
+                                <a href="">Headphones</a>
+                            </li>
+                            <li>
+                                <a href="">Home Devices</a>
+                            </li>
+                            <li>
+                                <a href="">Speakers & Home Audio</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul>
+                            <li>
+                                <h3 class="mainh3">
+                                    <a href="">Home Decor</a>
+                                </h3>
+                            </li>
+                            <li>
+                                <a href="">Accent Furniture</a>
+                            </li>
+                            <li>
+                                <a href="">Art, Wall Decor & Mirrors</a>
+                            </li>
+                            <li>
+                                <a href="">Books, Games & Puzzles</a>
+                            </li>
+                            <li>
+                                <a href="">Candles & Diffusers</a>
+                            </li>
+                            <li>
+                                <a href="">Decorative Accents</a>
+                            </li>
+                            <li>
+                                <a href="">Decorative Pillows</a>
+                            </li>
+                            <li>
+                                <a href="">Desk Accessories & Stationery</a>
+                            </li>
+                            <li>
+                                <a href="">Jewelry Boxes & Holders</a>
+                            </li>
+                            <li>
+                                <a href="">Lighting & Lamps</a>
+                            </li>
+                            <li>
+                                <a href="">Picture Frames</a>
+                            </li>
+                            <li>
+                                <a href="">Rugs</a>
+                            </li>
+                            <li>
+                                <a href="">Throw Blankets</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul>
+                            <li>
+                                <h3 class="mainh3">
+                                    <a href="">Kitchen</a>
+                                </h3>
+                            </li>
+                            <li>
+                                <a href="">Bar Accessories</a>
+                            </li>
+                            <li>
+                                <a href="">Coffee & Tea Accessories</a>
+                            </li>
+                            <li>
+                                <a href="">Cookware & Bakeware</a>
+                            </li>
+                            <li>
+                                <a href="">Cutlery</a>
+                            </li>
+                            <li>
+                                <a href="">Kitchen Linens</a>
+                            </li>
+                            <li>
+                                <a href="">Small Appliances</a>
+                            </li>
+                            <li>
+                                <a href="">Storage & Gadgets</a>
+                            </li>
+                            <li>
+                                <h3 class="mainh3">
+                                    <a href="">Tabletop</a>
+                                </h3>
+                            </li>
+                            <li>
+                                <a href="">Dinnerware</a>
+                            </li>
+                            <li>
+                                <a href="">Drinkware & Glassware</a>
+                            </li>
+                            <li>
+                                <a href="">Flatware</a>
+                            </li>
+                            <li>
+                                <a href="">Serveware</a>
+                            </li>
+                            <li>
+                                <a href="">Table Linens</a>
+                            </li>
+                            <li>
+                                <h3 class="mainh3">
+                                    <a href="">Water Bottles & Tumblers</a>
+                                </h3>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul>
+                            <li>
+                                <h3 class="mainh3">
+                                    <a href="">Pantry</a>
+                                </h3>
+                            </li>
+                            <li>
+                                <a href="">Candy</a>
+                            </li>
+                            <li>
+                                <a href="">Coffee & Tea</a>
+                            </li>
+                            <li>
+                                <a href="">Gift Sets</a>
+                            </li>
+                            <li>
+                                <h3 class="mainh3">
+                                    <a href="bag.html">Luggage & Travel</a>
+                                </h3>
+                            </li>
+                            <li>
+                                <h3 class="mainh3">
+                                    <a href="">Outdoor Living</a>
+                                </h3>
+                            </li>
+                            <li>
+                                <h3 class="mainh3">
+                                    <a href="">Pet Accessories</a>
+                                </h3>
+                            </li>
+                            <li>
+                                <h3 class="mainh3">
+                                    <a href="">Sanitizers & Personal Care</a>
+                                </h3>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="marginRem">
+                        <div>
+                            <div>
+                                <a href="">
+                                    <div>
+                                        <img src="https://n.nordstrommedia.com/id/4e7d9382-fd6b-4697-b1f3-ceeddf0a63aa.jpg">
+                                    </div>
+                                </a>
+                            </div>
+                            <div>
+                                <a class="decor" href="">Explore the Trend</a>
+                                <hr>
+                            </div>
+                        </div>
+    
+                    </div>
+                </div>
+            </div>
+    
+            <div class="Beauty-content">
+                <div>
+                    <div class="firstDiv">
+                        <ul>
+                            <li id="saleIn">
+                                <h3 class="mainh3"><a href="">Beauty: Get Inspired</a></h3>
+                            </li>
+                            <hr>
+                            <li>
+                                <h3><a href="">New Arrivals</a></h3>
+                            </li>
+                            <li>
+                                <h3>
+                                    <a href="">Allure Best of Beayty</a>
+                                </h3>
+                            </li>
+                            <li>
+                                <h3>
+                                    <a href="">Beauty Looks</a>
+                                </h3>
+                            </li>
+                            <li>
+                                <h3>
+                                    <a href="">Beauty Services, Stylists & Videos</a>
+                                </h3>
+                            </li>
+                            <li>
+                                <h3>
+                                    <a href="">Black-Owned & - Founded Brands</a>
+                                </h3>
+                            </li>
+                            <li>
+                                <h3>
+                                    <a href="">Gifts with Purchases</a>
+                                </h3>
+                            </li>
+                            <li>
+                                <h3>
+                                    <a href="">Holiday Gifts & Sets</a>
+                                </h3>
+                            </li>
+                            <li>
+                                <h3>
+                                    <a href="">Inclusive Beauty</a>
+                                </h3>
+                            </li>
+                            <li>
+                                <h3>
+                                    <a href="">Make it Pop-In @ Nordstrom</a>
+                                </h3>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul>
+                            <li>
+                                <h3 class="mainh3">
+                                    <a href="">Beauty Brands</a>
+                                </h3>
+                            </li>
+                            <li>
+                                <a href="">Bobbi Brown</a>
+                            </li>
+                            <li>
+                                <a href="">CHANEL</a>
+                            </li>
+                            <li>
+                                <a href="">Charlotte Tilbury</a>
+                            </li>
+                            <li>
+                                <a href="">Clinique</a>
+                            </li>
+                            <li>
+                                <a href="">Dior</a>
+                            </li>
+                            <li>
+                                <a href="">Dyson</a>
+                            </li>
+                            <li>
+                                <a href="">Estee Lauder</a>
+                            </li>
+                            <li>
+                                <a href="">Jo Malone London</a>
+                            </li>
+                            <li>
+                                <a href="">Kiehl's Since 1851</a>
+                            </li>
+                            <li>
+                                <a href="">La Mer</a>
+                            </li>
+                            <li>
+                                <a href="">Lancome</a>
+                            </li>
+                            <li>
+                                <a href="">Le Labo</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul>
+                            <li>
+                                <h3 class="mainh3">
+                                    <a href="">Makeup</a>
+                                </h3>
+                            </li>
+                            <li>
+                                <a href="">Blush</a>
+                            </li>
+                            <li>
+                                <a href="">Bronzer</a>
+                            </li>
+                            <li>
+                                <a href="">Brushes & Tools</a>
+                            </li>
+                            <li>
+                                <a href="">Concealer</a>
+                            </li>
+                            <li>
+                                <a href="">Eyebrowns</a>
+                            </li>
+                            <li>
+                                <a href="">Eyeliner</a>
+                            </li>
+                            <li>
+                                <a href="">Eyeshadow</a>
+                            </li>
+                            <li>
+                                <a href="">Foundation</a>
+                            </li>
+                            <li>
+                                <a href="">Gifts & Sets</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul>
+                            <li>
+                                <h3 class="mainh3">
+                                    <a href="">Skin Care</a>
+                                </h3>
+                            </li>
+                            <li>
+                                <a href="">Cleansers</a>
+                            </li>
+                            <li>
+                                <a href="">Exfoliators & Peels</a>
+                            </li>
+                            <li>
+                                <a href="">Eye Creams & Treatments</a>
+                            </li>
+                            <li>
+                                <a href="">Facial Masks</a>
+                            </li>
+                            <li>
+                                <a href="">Face Mists & Essences </a>
+                            </li>
+                            <li>
+                                <a href="">Face Mositurizers </a>
+                            </li>
+                            <li>
+                                <a href="">Gifts & Sets </a>
+                            </li>
+                            <li>
+                                <a href="">Lip Balms</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul>
+                            <li>
+                                <h3 class="mainh3">
+                                    <a href="">Fragrance</a>
+                                </h3>
+                            </li>
+                            <li>
+                                <a href="">Candles & Diffusers</a>
+                            </li>
+                            <li>
+                                <a href="">Gifts & Sets</a>
+                            </li>
+                            <li>
+                                <a href="">Perfume</a>
+                            </li>
+                            <li>
+                                <a href="">Rollerball & Travel Size</a>
+                            </li>
+                            <li>
+                                <h3 class="mainh3"><a href="">Hair Care</a></h3>
+                            </li>
+                            <li>
+                                <a href="">Hair & Scalp Treatments</a>
+                            </li>
+                            <li>
+                                <a href="">Hair Dryers & Styling Tools</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="marginRem">
+                        <div>
+                            <div>
+                                <a href="">
+                                    <div>
+                                        <img src="https://n.nordstrommedia.com/id/faae0c02-a9a9-427d-b69e-ce5fbd38e500.png">
+                                    </div>
+                                </a>
+                            </div>
+                            <div>
+                                <a class="decor" href="">New Markdowns</a>
+                                <hr>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="Designer-content">
+                <div>
+                    <div class="firstDiv">
+                        <ul>
+                            <li id="saleIn">
+                                <h3 class="mainh3"><a href="">Designer: Get Inspired</a></h3>
+                            </li>
+                            <hr>
+                            <li>
+                                <h3><a href="">Designer New Arrivals</a></h3>
+                            </li>
+                            <li>
+                                <h3>
+                                    <a href="">Designer Home</a>
+                                </h3>
+                            </li>
+                            <li>
+                                <h3>
+                                    <a href="">Designer Sale</a>
+                                </h3>
+                            </li>
+                            <li>
+                                <h3>
+                                    <a href="">Holiday Gifts from SPACE</a>
+                                </h3>
+                            </li>
+                            <li>
+                                <h3>
+                                    <a href="">New Concept: Make it Bazaar</a>
+                                </h3>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul>
+                            <li>
+                                <h3 class="mainh3">
+                                    <a href="">Designer Brands</a>
+                                </h3>
+                            </li>
+                            <li>
+                                <a href="">Alexander McQueen</a>
+                            </li>
+                            <li>
+                                <a href="">Balenciage</a>
+                            </li>
+                            <li>
+                                <a href="">Bottega Veneta</a>
+                            </li>
+                            <li>
+                                <a href="">Brunello Cucinelli</a>
+                            </li>
+                            <li>
+                                <a href="">Burberry</a>
+                            </li>
+                            <li>
+                                <a href="">Christian Louboutin</a>
+                            </li>
+                            <li>
+                                <a href="">Fendi</a>
+                            </li>
+                            <li>
+                                <a href="">Givenchy</a>
+                            </li>
+                            <li>
+                                <a href="">Golden Goose</a>
+                            </li>
+                            <li>
+                                <a href="">Gucci</a>
+                            </li>
+                            <li>
+                                <a href="">Moncler</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul>
+                            <li>
+                                <h3 class="mainh3">
+                                    <a href="">Women</a>
+                                </h3>
+                            </li>
+                            <li>
+                                <a href="">Designer Clothing</a>
+                            </li>
+                            <li>
+                                <a href="">Designer Shoes</a>
+                            </li>
+                            <li>
+                                <a href="">Designer Handbags</a>
+                            </li>
+                            <li>
+                                <a href="">Designer Jewelry</a>
+                            </li>
+                            <li>
+                                <a href="">Designer Accessories</a>
+                            </li>
+                            <li>
+                                <h3 class="mainh3">
+                                    <a href="">Men</a>
+                                </h3>
+                            </li>
+                            <li>
+                                <a href="">Designer Clothing</a>
+                            </li>
+                            <li>
+                                <a href="">Designer Shoes</a>
+                            </li>
+                            <li>
+                                <a href="">Designer Accessories</a>
+                            </li>
+    
+                        </ul>
+                    </div>
+                    <div>
+                        <ul>
+                            <li>
+                                <h3 class="mainh3">
+                                    <a href="">SPACE: Emerging & Advanced Designer</a>
+                                </h3>
+                            </li>
+                            <li>
+                                <a href="">Ready-to-wear</a>
+                            </li>
+                            <li>
+                                <a href="">Shoes</a>
+                            </li>
+                            <li>
+                                <a href="">Handbags</a>
+                            </li>
+                            <li>
+                                <a href="">Jewelry</a>
+                            </li>
+                            <li>
+                                <a href="">The Extra</a>
+                            </li>
+                            <li>
+                                <a href="">Home</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul>
+                            <li>
+                                <h3 class="mainh3">
+                                    <a href="">Men's Emerging & Advanced Designer</a>
+                                </h3>
+                            </li>
+                            <li>
+                                <a href="">Readt-to-Wear</a>
+                            </li>
+                            <li>
+                                <a href="">Accessories</a>
+                            </li>
+                            <li>
+                                <a href="">Shoes</a>
+                            </li>
+                            <li>
+                                <h3 class="mainh3">
+                                    <a href="">Men's Emerging & Advanced Designer Brands</a>
+                                </h3>
+                            </li>
+                            <li>
+                                <a href="">AMI</a>
+                            </li>
+                            <li>
+                                <a href="">Alexander Mattiussi</a>
+                            </li>
+                            <li>
+                                <a href="">Fear of God</a>
+                            </li>
+                            <li>
+                                <a href="">Homme Plisse</a>
+                            </li>
+                            <li>
+                                <h3 class="mainh3"><a href="">Beauty</a></h3>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="marginRem">
+                        <div>
+                            <div>
+                                <a href="">
+                                    <div>
+                                        <img src="https://n.nordstrommedia.com/id/55fe8c4a-a76f-489d-ad60-831bad73392a.jpg">
+                                    </div>
+                                </a>
+                            </div>
+                            <div>
+                                <a class="decor" href="">New Markdowns</a>
+                                <hr>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+<!-- navcomplete*********************************** -->
+
+
+  <div id="productbox">
+    
+    <div id="leftDiv">
+        <h1 style="color: red;">Filters</h1>
+        <div id="product-grid-filter">
+
+            <div id="product-grid-brand">
+                <hr>
+    
+                <div class="product-grid-filter-div">
+    
+                    <p>Brand</p>
+                    <span class="material-icons product-grid-plus-icon" id="product-grid-brand-icon" onclick="toggleDisplay('product-grid-brand-content', 'product-grid-brand-icon')"> + </span>
+                </div>
+    
+                <!-- <span class="material-icons" id = "search-icon">search<input id = "search-brand" placeholder = "Find a brand"/></span> -->
+    
+                <div id="product-grid-brand-content">
+                    <div class="product-grid-checkbox-div"><input class="product-grid-brand product-grid-checkmark" type="checkbox" value="Deny Designs" name="brand" onclick="Nike()"><p for="Deny Designs">Shedrain</p></div>
+                
+                <div class="product-grid-checkbox-div"><input class="product-grid-brand product-grid-checkmark" type="checkbox" value="Chopvalue" name="brand" onclick="Zella()"><p for="Chopvalue" >Zella</p></div>
+
+                
+                <div class="product-grid-checkbox-div"><input class="product-grid-brand product-grid-checkmark" type="checkbox" value="Oliver Gal" onclick="Nordstrom()"><p for="Oliver Gal">Nordstrom</p></div>
+                <div class="product-grid-checkbox-div"><input class="product-grid-brand product-grid-checkmark" type="checkbox" value="Oliver Gal" onclick="Newmarkdown()"><p for="Oliver Gal">Hershel</p></div>
+                <div class="product-grid-checkbox-div"><input class="product-grid-brand product-grid-checkmark" type="checkbox" value="Oliver Gal" onclick="hershel()"><p for="Oliver Gal">monos</p></div>
+                <div class="product-grid-checkbox-div"><input class="product-grid-brand product-grid-checkmark" type="checkbox" value="Oliver Gal" onclick="FreePeople()"><p for="Oliver Gal">Free People</p></div>
+
+                
+                <div class="product-grid-checkbox-div"><input class="product-grid-brand product-grid-checkmark" type="checkbox" value="Marimekko" onclick="vuori()"><p for="Marimekko">vuori</p></div></div>
+    
+                <hr>
+            </div>
+
+            <!-- ------- -->
+
+            
+
+            <!-- ----- -->
+            
+    
+    
+    
+            <div id="product-grid-color">
+                <div class="product-grid-filter-div">
+                    <p>Color</p>
+                    <span class="material-icons product-grid-plus-icon" id="product-grid-color-icon" onclick="toggleDisplay('product-grid-color-content', 'product-grid-color-icon')"> + </span>
+                </div>
+    
+    
+    
+                <div id="product-grid-color-content">
+                    <div class="product-grid-checkbox-div"><input class="product-grid-color product-grid-checkmark" type="checkbox" value="Green" onclick="Black()"><p for="Green" >Black</p></div>
+                    <div class="product-grid-checkbox-div"><input class="product-grid-color product-grid-checkmark" type="checkbox" value="Pink"><p for="Pink">Pink</p></div>
+                    <div class="product-grid-checkbox-div"><input class="product-grid-color product-grid-checkmark" type="checkbox" value="Grey"><p for="Grey">Grey</p></div><div class="product-grid-checkbox-div"><input class="product-grid-color product-grid-checkmark" type="checkbox" value="Brown"><p for="Brown">Brown</p></div><div class="product-grid-checkbox-div"><input class="product-grid-color product-grid-checkmark" type="checkbox" value="Gold"><p for="Gold">Gold</p></div><div class="product-grid-checkbox-div"><input class="product-grid-color product-grid-checkmark" type="checkbox" value="Black"><p for="Black">Black</p></div><div class="product-grid-checkbox-div"><input class="product-grid-color product-grid-checkmark" type="checkbox" value="Red"><p for="Red">Red</p></div><div class="product-grid-checkbox-div"><input class="product-grid-color product-grid-checkmark" type="checkbox" value="Blue"><p for="Blue">Blue</p></div><div class="product-grid-checkbox-div"><input class="product-grid-color product-grid-checkmark" type="checkbox" value="Yellow"><p for="Yellow">Yellow</p></div><div class="product-grid-checkbox-div"><input class="product-grid-color product-grid-checkmark" type="checkbox" value="Orange"><p for="Orange">Orange</p></div><div class="product-grid-checkbox-div"><input class="product-grid-color product-grid-checkmark" type="checkbox" value="Teal"><p for="Teal">Teal</p></div></div>
+                <hr>
+            </div>
+    
+            <div id="product-grid-type">
+                <div class="product-grid-filter-div">
+                    <p>Product Type</p>
+                    <span class="material-icons product-grid-plus-icon" id="product-grid-type-icon" onclick="toggleDisplay('product-grid-type-content', 'product-grid-type-icon')"> + </span>
+                </div>
+    
+    
+                <div id="product-grid-type-content">
+                    <div class="product-grid-checkbox-div"><input class="product-grid-type product-grid-checkmark" type="checkbox" value="Decorative Accents"><p for="Decorative Accents">Hoodie</p></div>
+                    <div class="product-grid-checkbox-div"><input class="product-grid-type product-grid-checkmark" type="checkbox" value="Framed Art"><p for="Framed Art">Pants</p></div>
+                    <div class="product-grid-checkbox-div"><input class="product-grid-type product-grid-checkmark" type="checkbox" value="Wall Hanging"><p for="Wall Hanging">T-Shirt</p></div></div>
+    
+                <hr>
+            </div>
+    
+        </div>
+
+
+
+    </div>
+    <div id="RightDiv">
+      <div class = "head">
+        <div>
+          <h2>Luggage & Travel</h2>
+        <h3>593 items</h3>
+        
+        </div>
+        <div style="width: 20%; height: 100%;">
+          <select id="sortByFeatured" onchange="handleSort()">
+              <option value="low">Sort by: low to high</option>
+              <option value="high">Sort by:high to low</option>
+              <option value="sortByRating">Sort by Rating</option>
+              <option value="sortByAlphabetical">Sort by Alphabetical</option>
+          </select>
+          <button id="cart" style="background-color: green;">Go TO Cart</button>
+      </div>
+        
+      </div>
+     
+    <div id="rightDiv">
+    </div>
+  </div>
+</div>
+<div class="footer">
+  <div class="footer-col">
+      
+      <ul class="ul">
+          <li><label class="heading">Customer Service</label></li>
+          <li>Contact Us</li>
+          <li>Order Status</li>
+          <li>Shipping</li>
+          <li>Returns Policy & Exchanges</li>
+          <li>Price Adjustments</li>
+          <li>Gift Cards</li>
+          <li>FAQ</li>
+          <li>Product recalls</li>
+          <li style="padding-top: 10px;font-size: 15px;"><img src="https://cdn.countryflags.com/thumbs/india/flag-round-250.png" alt="" style="height: 20px;vertical-align:top;"> India</li>
+      <ul>
+  </div>
+  <div class="footer-col">
+      <ul class="ul">
+          <li><label class="heading">About Us</label></li>
+          <li>Carrers</li>
+          <li>Corporate Social Responsibility</li>
+          <li>Diversity, Inclusion & Belonging</li>
+          <li>Investor Relations</li>
+          <li>Press Releases</li>
+          <li>Get Email Updates</li>
+          <li>Nordstrom Blog</li>
+          
+      <ul>
+  </div>
+  <div class="footer-col">
+      <ul class="ul">
+          <li><label class="heading">Stores & Services</label></li>
+          <li>Find a Store</li>
+          <li>Free Style Help</li>
+          <li>Alterations & Tailoring</li>
+          <li>Trunk Club</li>
+          <li>Pop-In-Shop</li>
+          <li>Virtual Events</li>
+          <li>Spa Nordstrom</li>
+          <li>Nordstrom Restaurants</li>
+          <li>Nordstrom Local</li>
+          
+      <ul>
+  </div>
+  <div class="footer-col">
+      <ul class="ul">
+          <li><label class="heading">Nordstrom Card & Rewards</label></li>
+          <li>The Nordy Club Rewards</li>
+          <li>Pay My Bill</li>
+          <li>Manage my Nordstrom Card</li>
+          
+      <ul>
+  </div>
+  <div class="footer-col">
+      <ul class="ul">
+          <li><label class="heading">Nordstrom, Inc.</label></li>
+          <li>Nordstrom Rack</li>
+          <li>Nordstrom Canada</li>
+          <li>Trunk Club</li>
+          
+          
+      <ul>
+  </div>
+
+  <div class="footer-col">
+      <ul class="ul">
+          <li style="padding:2px;margin-top: 50px;"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAaVBMVEX///8AAADb29v7+/t6enro6Ojy8vKAgIDr6+v39/eVlZXv7+9ISEg8PDz4+Pjl5eWysrLIyMhnZ2cKCgqgoKAtLS2oqKgoKCjW1tYgICCGhoZcXFxubm5UVFRpaWkcHBw3NzfNzc29vb1AdKp8AAADBElEQVR4nO3aiW7iMBhFYcLWsJWdaaHT0r7/Q3aTZkoaCWPutZF1zgP88SdInAQ6nfh6y/HqcV15Wz8+j5dXLPKKhndm28/2w/TATULfZ5vEvsksMbCqpkk/xnly32eDdMA6C7Cq0n2K20zCWSpgyovoaeM0wDwn4XdpTsVDRuFTCmDgZWbe6V1S6DdjlEAYttXvLp67C5q7MIia/Q1ayeUnzCBo7rNB1CxoIRHfpvuguS8GUaNJXmFlIDXqhi1kfvHgwEtNbTCdFii8fG8ehw3uGkynBQqrZT24pHoZOPd2hK4QIkSIECFChMmF/TRlFNqP9l1GYc9+uK8QakPoCKE2hI4QakPoCKE2hI4QakPoCKE2hI4QakPoCKE2hI4QakPoCKE2hI4QakPoCKE2hI4QakPoCKE2hI4QakPoCKE2hI4QakPoCKE2hI4QakPoCKE2hI4QakPoCKE2hI4QakPoCKE2hI4QakPoCKE2hI4QakPoCKE2hI4QakPoCKE2hI4QakPoCKE2hI4QakPoCKE2hI4QakPoCKE2hI4QakPoCKE2hI4QakPoCKE2hI4QakPoCKE2hI4QakPoCKE2hI4QakPoCKE2hI4QakPoCKG2E6H9aN9lFGYIIUKECBEiRIgQIUKECD9bFy2cLupR575eTAsVzv4vrjsrUdg/GfNUnrDfmBNLvFnh8degP4UJH34NWpYlnLZMOhYlXLRM2hQlbFvXa1HCtpfjw+KFvaKEw5ZJk6KEry2TXosSjlsmjYsSvrRMinuOulVhy4a4ixt0s8Jq1JgTt1fcsvB4Oqa3LU5YHSc/pkxigbcsrKrNvyFxt6S3L/x4DH576D689a8Z4RfOr1meoLldOMosvLcLO+cXYc0P7ByyAg8JhJH3IqJ2CYRxDz2q2h7D5K0yAlcpgFn3C/9e8dVdNuA+DTD6dfXVHVMBO4NMwsn5panKcyrW6YAfW0b8D4CxTZNsFD+Ke48U3+b8ktQNU15S982XIGnqLfeH7bX/PDjXervaL69Z5Tv7akJcgNPK8AAAAABJRU5ErkJggg==" alt="facebook" style="width:25px;margin-right:10px"/>Get our apps</li>
+          <div style="display:flex;gap:17px;margin-top: 20px;">
+              
+              <img src="data:image/png;base64,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" alt="insta" style="width:22px;"/>
+              <img src="data:image/png;base64,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" alt="pinterest" style="width:22px;"/>
+              <img src="data:image/png;base64,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" alt="Twitter" style="width:22px;"/>
+              <img src="data:image/png;base64,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" alt="facebook" style="width:24px;"/>
+          </div>
+      <ul>
+  </div>
+  
+
+  
+  
+</div>
+
+<div class="footer" >
+  <p>Your Privacy Rights</p>
+  <p>Dont Sell My Info</p>
+  <p>Terms &amp; Conditions</p>
+  <p>Intrest Based Ads</p>
+  <p>&copy;2021 Nordstrom,Inc</p>
+</div> 
+
+    
+</body>
+</html>
+<script>
+    var data = [
+    {
+      image_url:"https://n.nordstrommedia.com/id/sr3/c0f4ce3b-a909-45c0-8ea0-ccaa5fe9db6b.jpeg?h=365&w=240&dpr=2",
+      var:"Nordstrom",
+      type: "Intial Square Jewelery Box",
+      MRP:  1605,
+      Star : "★★★★",
+      Rating : 4,
+    },
+    {
+      image_url:"https://n.nordstrommedia.com/id/sr3/b5982199-c7a6-495b-9efc-7efb2e8b5e8f.jpeg?h=365&w=240&dpr=2",
+      var:"New Markdown",
+      type: "Pebble Leather Dopp Kitt",
+      MRP: 6262,
+      Star : "★★",
+      Rating : 2,
+    },
+    {
+      image_url:"https://n.nordstrommedia.com/id/sr3/4862dbcd-3766-4c78-be92-04bae9668fca.jpeg?h=365&w=240&dpr=2",
+      var:"Beis",
+      type: "The Cosmetic Case",
+      MRP:5459,
+      Star : "★★★★★",
+      Rating : 5,
+    },
+    {
+      image_url:"https://n.nordstrommedia.com/id/sr3/82e92073-fca7-4c9e-a263-ef1a6ef46d8d.jpeg?h=365&w=240&dpr=2",
+      var:"Herschel Supply Co.",
+      type: "Novel Duffle Bag",
+      MRP:7224,
+      Star : "★★★★★",
+      Rating :5,
+    },
+    {
+      image_url:"https://n.nordstrommedia.com/id/sr3/1ca2c598-4f59-4713-8a50-ff691f15e664.jpeg?h=365&w=240&dpr=2",
+      var:"MCM",
+      type: "Klara Monogram Zip Mini wallet",
+      MRP:22479,
+      Star : "★★★★",
+      Rating :4,
+    },
+    {
+      image_url:"https://n.nordstrommedia.com/id/sr3/2046a39e-d21e-41df-a0c0-a081281b6599.jpeg?h=365&w=240&dpr=2",
+      var:"ShedRain",
+      type: "Auto Open Stick Clear Dome",
+      MRP:2408 ,
+      Star : "★★★★",
+      Rating :4,
+    },
+    {
+      image_url:"https://n.nordstrommedia.com/id/sr3/ae3f6dd4-1b52-4c3c-873b-41f4ece1bac8.jpeg?h=365&w=240&dpr=2",
+      var:"Monos",
+      type: "23-Inch Carry-On",
+      MRP:19267,
+      Star : "★★★★",
+      Rating :4,
+    },
+   
+    {
+      image_url:"https://n.nordstrommedia.com/id/sr3/e598af3c-3201-4fcb-b7ff-90801ff0dda6.jpeg?h=365&w=240&dpr=2",
+      var:"Herschel Supply Co.",
+      type: "Auto Open Stick Clear Dome",
+      MRP:3280,
+      Star : "★★★★",
+      Rating :4,
+    },
+    {
+      image_url:"https://n.nordstrommedia.com/id/sr3/e598af3c-3201-4fcb-b7ff-90801ff0dda6.jpeg?h=365&w=240&dpr=2",
+      var:"Herschel Supply Co.",
+      type: "Auto Open Stick Clear Dome",
+      MRP:3280,
+      Star : "★★★★★",
+      Rating :5,
+    },
+    {
+      image_url:"https://n.nordstrommedia.com/id/sr3/82e92073-fca7-4c9e-a263-ef1a6ef46d8d.jpeg?h=365&w=240&dpr=2",
+      var:"Herschel Supply Co.",
+      type: "Novel Duffle Bag",
+      MRP:5324,
+      Star : "★★★",
+      Rating :3,
+    },
+    {
+      image_url:"https://n.nordstrommedia.com/id/sr3/e598af3c-3201-4fcb-b7ff-90801ff0dda6.jpeg?h=365&w=240&dpr=2",
+      var:"Herschel Supply Co.",
+      type: "Auto Open Stick Clear Dome",
+      MRP:3280,
+      Star : "★★★★★",
+      Rating:5,
+    },
+    {
+      image_url:"https://n.nordstrommedia.com/id/sr3/e598af3c-3201-4fcb-b7ff-90801ff0dda6.jpeg?h=365&w=240&dpr=2",
+      var:"Herschel Supply Co.",
+      type: "Auto Open Stick Clear Dome",
+      MRP:"3,280",
+      Star : "★★★",
+      Rating :3,
+    },
+    {
+      image_url:"https://n.nordstrommedia.com/id/sr3/b5982199-c7a6-495b-9efc-7efb2e8b5e8f.jpeg?h=365&w=240&dpr=2",
+      var:"New Markdown",
+      type: "Pebble Leather Dopp Kitt",
+      MRP: 9262,
+      Star : "★★★★★",
+      Rating : 5,
+    },
+    {
+      image_url:"https://n.nordstrommedia.com/id/sr3/e598af3c-3201-4fcb-b7ff-90801ff0dda6.jpeg?h=365&w=240&dpr=2",
+      var:"Herschel Supply Co.",
+      type: "Auto Open Stick Clear Dome",
+      MRP:3280,
+      Star : "★★★★",
+      Rating :4,
+    },
+    {
+      image_url:"https://n.nordstrommedia.com/id/sr3/c0f4ce3b-a909-45c0-8ea0-ccaa5fe9db6b.jpeg?h=365&w=240&dpr=2",
+      var:"Nordstrom",
+      type: "Intial Square Jewelery Box",
+      MRP:  1605,
+      Star : "★★★★",
+      Rating : 4,
+    },
+    {
+      image_url:"https://n.nordstrommedia.com/id/sr3/c0f4ce3b-a909-45c0-8ea0-ccaa5fe9db6b.jpeg?h=365&w=240&dpr=2",
+      var:"Nordstrom",
+      type: "Intial Square Jewelery Box",
+      MRP:  1605,
+      Star : "★★★★",
+      Rating : 4,
+    },
+    
+];
+      localStorage.setItem("product",JSON.stringify(data));
+      var allProducts = JSON.parse(localStorage.getItem("product"))
+        displayProducts(allProducts)
+       
+        
+
+        function displayProducts(allProducts){
+          document.getElementById("rightDiv").innerHTML="";
+          allProducts.map(function(item){
+            var imgDiv = document.createElement("div");
+            imgDiv.setAttribute("class","imgDivClass");
+            var img = document.createElement("img");
+            img.setAttribute("class", "imgClass");
+            img.setAttribute("src", item.image_url);
+            var p1 = document.createElement("p");
+            p1.setAttribute("class","p1Class");
+            p1.textContent = item.var;
+            var p2 = document.createElement("p");
+            p2.setAttribute("class","p2Class");
+            p2.textContent = item.type;
+            var p3 = document.createElement("p");
+            p3.setAttribute("class","p3Class");
+            p3.textContent = "INR" + " "+item.MRP;
+            var p4 = document.createElement("p");
+             p4.setAttribute("class","p4Class");
+              p4.textContent = item.Star;
+              var p5 = document.createElement("p");
+             p5.setAttribute("class","p5Class");
+              p5.textContent = item.Rating;
+            
+            var cartBtn = document.createElement("button")
+            cartBtn.textContent = "Add TO Cart"
+          cartBtn.addEventListener("click", function(){
+          addToCart(item) ;
+         })
+            imgDiv.append(img,p1,p2,p3,p4,cartBtn);
+            rightDiv.append(imgDiv)
+
+    
+  })
+}
+// sorting******
+function handleSort() {
+    var sortByFeatured = document.getElementById("sortByFeatured").value;
+    if (sortByFeatured === "low") {
+        var womenData = allProducts.sort(function (a, b) {
+            return a.MRP - b.MRP;
+        })
+        displayProducts(womenData)
+    }
+    else if (sortByFeatured === "high") {
+       var womenData = allProducts.sort(function (a, b) {
+            return b.MRP - a.MRP;
+        })
+        displayProducts(womenData)
+    }
+    
+    else if (sortByFeatured === "SortByRating") {
+        var womenData = allProducts.sort(function (a, b) {
+            return b.Rating - a.Rating
+        })
+        displayProducts(womenData)
+    
+  } else {
+    var womenData = JSON.parse(localStorage.getItem("product"))
+    displayProducts(womenData);
+}
+}
+  
+  
+   
+    
+    
+// CART BUTTON
+
+function addToCart(item) {
+cart.push(item) ;
+localStorage.setItem("cartArr", JSON.stringify(cart)) ;
+
+}
+// go to cart
+document.getElementById("cart").addEventListener("click", function(){
+window.location.href = "cart.html"
+}) ;
+
+
+
+
+// nav bar*********************************
+function dropDown(a) {
+        var show1 = document.querySelector("#main-content")
+        var show = document.querySelector(`.${a}-content`)
+        show1.style.display = "block";
+        // show.style.display="block";
+        show.style.height = "900px"
+
+        var ele = document.getElementsByClassName("categoryType")
+
+        for (var i = 0; i < ele.length; i++) {
+            if (ele[i].textContent != a) {
+                var eremo = document.querySelector(`.${ele[i].textContent}-content`)
+                eremo.style.height = "0px";
+
+                ele[i].style.color = "rgba(0, 0, 0, 0.3)"
+                ele[i].style.textDecoration = "none"
+            } else {
+                ele[i].style.color = "#393939"
+                ele[i].style.textDecoration = "underline"
+            }
+        }
+    }
+
+    function searchBar() {
+        var bar = document.querySelector("#inputBox")
+        bar.style.height = "70px";
+    }
+
+    function removeBar() {
+        var bar = document.querySelector("#inputBox")
+        bar.style.height = "0px";
+    }
+
+    function signBar() {
+        var bar = document.querySelector("#signIN")
+        bar.style.display = "block";
+    }
+
+    function removeSignBar() {
+        var bar = document.querySelector("#signIN")
+        bar.style.display = "none";
+    }
+
+    function removeDropdown() {
+        var show = document.querySelector("#main-content")
+        show.style.display = "none";
+        var reset = document.getElementsByClassName("categoryType")
+        for (var i = 0; i < reset.length; i++) {
+            if (reset[i].textContent != "Sale") {
+                reset[i].style.color = "#393939"
+            }
+            reset[i].style.textDecoration = "none"
+        }
+    }
+    
+
+
+// filter************
+function toggleDisplay(divID, id) {
+        var div = document.getElementById(divID);
+        var icon_id = document.getElementById(id);
+        if (div.style.display === "none") {
+            div.style.display = "block";
+            icon_id.innerText = ' - ';
+        } else {
+            div.style.display = "none";
+            icon_id.innerText = ' + ';
+        }
+    }
+
+    var tick = 0;
+
+    function Natori() {
+        
+        console.log("here");
+        
+        womenData = womenData.filter(function (elem) {
+            // arr.push(elem.prodName == "Natori");
+            return elem.prodName == "Natori";
+        })
+        productList(womenData);
+        
+        
+    
+    }
+    function Zella() {
+        // var arr = womenData;
+        console.log("here");
+        womenData = womenData.filter(function (elem) {
+            return elem.prodName == "Zella";
+        })
+        
+        // window.location.reload(true);
+    
+        productList(womenData);
+
+        
+    }
+    function FreePeople() {
+        // var arr = womenData;
+        console.log("here");
+         womenData = womenData.filter(function (elem) {
+            return elem.prodName == "Free People";
+        })
+        productList(womenData);
+    }
+    function vuori() {
+        
+        console.log("here");
+         womenData = womenData.filter(function (elem) {
+            return elem.prodName == "vuori";
+        })
+        productList(womenData);
+    }
+    function Nike() {
+        
+        console.log("here");
+         womenData = womenData.filter(function (elem) {
+            return elem.prodName == "Nike";
+        })
+        productList(womenData);
+    }
+    function Adidas() {
+        
+        console.log("here");
+         womenData = womenData.filter(function (elem) {
+            return elem.prodName == "Adidas";
+        })
+        productList(womenData);
+    }
+    function SweatyBetty() {
+        
+        console.log("here");
+         womenData = womenData.filter(function (elem) {
+            return elem.prodName == "Sweaty Betty";
+        })
+        productList(womenData);
+    }
+    
+   
+
+
+    // ------
+    function createBrandFilters() {
+        var brands_div = document.getElementById('product-grid-brand-content');
+        brands_div.innerHTML = "";
+
+        var brands = {};
+
+        currentArray.forEach(function (product) {
+            if (brands[product.brand] === undefined) {
+                brands[product.brand] = 1;
+                var div = document.createElement('div');
+                div.setAttribute('class', 'product-grid-checkbox-div');
+
+                var checkbox = document.createElement('input');
+                checkbox.setAttribute('class', `product-grid-brand product-grid-checkmark`);
+                checkbox.setAttribute('type', 'checkbox');
+                checkbox.value = `${product.brand}`;
+                checkbox.onchange = addBrandFilter;
+
+                var label = document.createElement('p');
+                label.setAttribute('for', `${product.brand}`);
+                label.innerText = `${product.brand}`;
+
+                div.append(checkbox, label);
+                brands_div.appendChild(div);
+            }
+        })
+    }
+
+    
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+          
+
+        
+    
+
+        
+        
+</script>
